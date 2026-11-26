@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#142b49">
+<title>ELC 811 | Learning & Examination Portal</title>
+<style>
+:root{--navy:#142b49;--blue:#2365a8;--teal:#087f79;--gold:#e5a72c;--ink:#20324a;--muted:#66768b;--paper:#f3f6fb}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 12% 12%,#dcecff 0,transparent 28%),radial-gradient(circle at 90% 82%,#d8f2ee 0,transparent 25%),var(--paper)}
+header{background:linear-gradient(120deg,#142b49,#1c5277 65%,#087f79);color:white;padding:30px 22px 76px}
+.head{max-width:1080px;margin:auto;display:flex;align-items:center;gap:18px}
+.mark{width:66px;height:66px;border-radius:19px;background:#ffffff1c;border:1px solid #ffffff55;display:grid;place-items:center;font-size:32px;flex:none}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:#d9eaff}
+h1{font-size:clamp(27px,4vw,43px);line-height:1.1;margin:6px 0}
+header p{margin:8px 0 0;color:#e1edf7;font-size:16px}
+main{max-width:1080px;margin:-48px auto 0;padding:0 22px 36px}
+.panel{background:#fff;border:1px solid #e1e8f0;border-radius:25px;box-shadow:0 18px 50px #18355218;padding:clamp(22px,4vw,38px)}
+.intro{text-align:center;margin-bottom:26px}
+.intro h2{font-size:clamp(22px,3vw,29px);margin:0 0 8px;color:var(--navy)}
+.intro p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.app-card{position:relative;overflow:hidden;border:1px solid #e1e8f0;border-radius:20px;padding:25px;display:flex;flex-direction:column;min-height:300px;background:linear-gradient(150deg,#fff,#f8fbff)}
+.app-card:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:var(--accent)}
+.app-card.exam{--accent:linear-gradient(90deg,#bd7c25,#e9b84d)}
+.app-card.bank{--accent:linear-gradient(90deg,#1766a5,#35a4bd)}
+.icon{width:58px;height:58px;border-radius:17px;background:var(--tint);display:grid;place-items:center;font-size:28px;margin-bottom:17px}
+.bank .icon{--tint:#e5f1fc}.exam .icon{--tint:#fff3dc}
+.kicker{font-size:11px;letter-spacing:1.6px;font-weight:900;color:var(--accent-text);text-transform:uppercase}
+.bank .kicker{--accent-text:#1766a5}.exam .kicker{--accent-text:#9a6416}
+h3{font-size:23px;margin:7px 0 9px;color:var(--navy)}
+.app-card p{margin:0;color:var(--muted);line-height:1.65}
+.details{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 22px}
+.pill{font-size:12px;font-weight:700;padding:6px 10px;border-radius:99px;background:#eef3f8;color:#51647b}
+a.launch{margin-top:auto;text-decoration:none;text-align:center;padding:13px 18px;border-radius:12px;color:white;font-weight:800;transition:transform .15s,filter .15s}
+a.launch:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.bank a.launch{background:linear-gradient(110deg,#1766a5,#248caa)}
+.exam a.launch{background:linear-gradient(110deg,#a96b19,#d79d2f)}
+.note{text-align:center;color:var(--muted);font-size:13px;margin:24px 0 0}
+footer{text-align:center;color:#718198;font-size:12px;padding:22px}
+@media(max-width:700px){header{padding-bottom:68px}.head{align-items:flex-start}.mark{width:54px;height:54px;font-size:26px}.cards{grid-template-columns:1fr}.app-card{min-height:270px}main{padding-inline:14px}.panel{padding:20px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="head">
+    <div class="mark" aria-hidden="true">⚡</div>
+    <div>
+      <div class="eyebrow">ELC 811 · Electronics</div>
+      <h1>Learning &amp; Examination Portal</h1>
+      <p>Your central starting point for revision, practice and previous examinations.</p>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="panel">
+    <div class="intro">
+      <h2>Choose an application</h2>
+      <p>Select the learning tool you want to open.</p>
+    </div>
+    <div class="cards">
+      <article class="app-card bank">
+        <div class="icon" aria-hidden="true">📚</div>
+        <div class="kicker">Application 01</div>
+        <h3>Question Bank 2026–2027</h3>
+        <p>Explore the question categories, practise with questions and use the question-bank application for revision and exam preparation.</p>
+        <div class="details">
+          <span class="pill">Topic-based practice</span>
+          <span class="pill">Question categories</span>
+        </div>
+        <a class="launch" href="ELC811_Question_Bank%202026-2027(1).html">Open Question Bank&nbsp; →</a>
+      </article>
+      <article class="app-card exam">
+        <div class="icon" aria-hidden="true">📝</div>
+        <div class="kicker">Application 02</div>
+        <h3>Previous Final Examinations</h3>
+        <p>Open the previous-exams application to review archived examination papers and practise using past examination questions.</p>
+        <div class="details">
+          <span class="pill">Past examinations</span>
+          <span class="pill">Exam practice</span>
+        </div>
+        <a class="launch" href="ELC811_Previous_Exams(2).html">Open Previous Exams&nbsp; →</a>
+      </article>
+    </div>
+    <p class="note">Tip: Keep all three HTML files in the same folder. Open this page to access either application.</p>
+  </section>
+</main>
+<footer>ELC 811 · Learning &amp; Examination Portal</footer>
+</body>
+</html>
